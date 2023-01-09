@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Chloe Chieng</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index2.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  </style>
+
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>PORTFOLIO
+        </h1>
+        <h3>My Data Science Journey</h3>
+
+        <div class="wrap">
+          <a class="textLink" href="pj.html"> TAKE ME TO: Chloe's Project </a>
+
+        <h2>Week 1</h2>
+
+        <h3>Infation Rate in the United Kingdom</h3>
+
+        <p>The first chart tracks the inflation rate in the UK since 1800 </p>
+        <div class="chart" id="Chart1"></div>
+
+        <h3>Bank Rate in the United Kingdom</h3>
+        <p>My second chart looks at Bank of England's policy rate</p>
+        <div class="chart" id="Chart2"> </div>
+
+        <div class="myWeek2">
+        
+            
+            <h2>Week 2</h2>
+    
+            <p>My first chart displays oustanding IMF lending from 1984 to present day</p>
+            <div class="chart" id="Chart3.json"></div>
+    
+           
+            <p>My second chart is an improved version of a chart from the FT, due to inflation adjustment</p>
+            <div class="chart" id="Chart4"> </div>
+
+            <p>The most risky year to me is 2022, due to it the year being unpredictable with sudden lows and highs in the stock market. </p>
+        <div class="title">
+    
+           </div>
+        
+           <hr>
+        
+        
+           <div class="chartcontainer">
+        
+            <!-- CHART 3 initial IMF graph-->
+        
+           <div class="Chart" id="Chart5">
+            
+            <div class="myWeek3">
+            <h2>Week 3</h2>
+
+
+            <p>The difference between the first and the second endcoding is ... </p>
+        
+            <div class="title">
+    
+           </div>
+        
+           <hr>
+
+              <!-- CHART 4 initial IMF graph-->
+
+            <h2>Week 4</h2>
+            <p>Ranking of poorest country in the world</p>
+           
+           <div class="Chart" id="Chart6">
+    
+            <p>The data scraped using google colab can be found using this link</p>
+
+            <div class="myWeek4">
+        
+
+             <!-- CHART 5 initial IMF graph-->
+           <h2>Week 5</h2>
+
+           <div class="Chart5" id="chart5">
+            
+            <div class="myWeek5">
+
+              <!-- CHART 7 initial IMF graph-->
+        
+           <div class="Chart7" id="chart7">
+            
+            <div class="myWeek7">
+            <h2>Week 7</h2>
+
+              <!-- CHART 8 initial IMF graph-->
+        
+           <div class="Chart8" id="chart8">
+            
+            <div class="myWeek8">
+            <h2>Week 8</h2>
+
+             <!-- CHART 9 initial IMF graph-->
+        
+           <div class="Chart9" id="chart9">
+            
+            <div class="myWeek9">
+            <h2>Week 9</h2>
+
+             <!-- CHART 10 initial IMF graph-->
+        
+           <div class="Chart10" id="chart10">
+            
+            <div class="myWeek10">
+            <h2>Week 10-11</h2>
+
+          
+    </div>
+      
+
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "chart1_covidUKRegions.json ";
+    var myChart2 = "chart2_ukProductivity.json";
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+
+    //Define charts:
+    var myChart3 = "Chart3 ";
+    var myChart4 = "Chart4";
+
+    // Embed charts:
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+</script>
+
+
+
+  </div>
+
+</html>

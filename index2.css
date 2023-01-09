@@ -1,0 +1,76 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my second CSS file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+
+/* Book on colour = Joseph Albers - Interaction of Colour */
+
+body{
+    background: rgba(1, 32, 62, 0.782);
+ }
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1,h2, h3, p{
+    color:rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+
+
+}
+ a{
+    color:rgb(255, 196, 196);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small
+    ;
+   
+ }   
+
+.myWeek1{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(127, 176, 194);
+
+      
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+
+/* Set the apperance of the class, chart */
+.chart{
+    
+    background-color: white;
+    width:450px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    
+
+}
+    
+.chart3{
+    background-color: white;
+    width:450px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FFB347;
+    margin: 10px;
+}
+
+.chart4{
+    background-color: white;
+    width:550px;
+    margin: 20px 225px 20px 225px;
+}

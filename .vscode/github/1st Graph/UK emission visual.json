@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 250,
+  "title": {
+    "text": "Annual Carbon (CO2) and Greenhouse Gas (GHG) Emission ",
+    "fontSize": 15,
+    "subtitle": "Declining Trend of CO2 and GHG in the UK (1990-2021). Source: GOV.UK",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Chloechieng/Chloechieng.github.io/main/uk-emissions%20project.csv"
+  },
+  "mark": {"type": "line", "point": {"filled": false, "fill": "skyblue"}},
+  "encoding": {
+    "x": {"field": "Years", "type": "ordinal", "title": null},
+    "y": {
+      "aggregate": "sum",
+      "field": "Total greenhouse gases",
+      "title": "Total Greenhouse Gases (GHG)"
+    },
+    "tooltip": [
+      {"field": "Years", "type": "nominal", "title": "Year"},
+      {"field": "Total CO2", "title": "Total CO2)"},
+      {"field": "Total greenhouse gases", "title": "Total GHG"}
+    ]
+  },
+  "config": {}
+}

@@ -1,0 +1,52 @@
+
+/* FONTS: */
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgba(222, 252, 195, 0);
+}
+
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(2, 46, 20);
+}
+
+h2{
+    font-family: Arial;
+    font-size: medium;
+
+    color:rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+p{
+    font-family: Arial;
+    font-size: smaller;
+
+    color:rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+a{
+    font-family: Arial;
+    font-size: medium;
+    
+
+    color:rgb(42, 11, 68);
+    background-color: rgba(88, 249, 158, 0.324);
+}
+
+/* AREAS OF THE PAGE */
+
+body{
+    background-color: rgb(7, 63, 16);
+    align-self: center;
+}
+
+.wrap{
+    background-color: rgb(195, 252, 212);
+}

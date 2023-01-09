@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chloe Chieng's Project</title>
+ <!-- Link to my style sheet -->
+ <link rel="stylesheet" href="pj.css">
+
+
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+</style>
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+<body>
+    
+
+<h1>Does Decrease Funding in Fossil Fuel increase Banks' performace?</h1>
+
+<div class="wrap">
+    <a class="textLink" href="idx.html"> Bring Me Back: HOME </a>
+
+
+<h2> Aim: CO2 emission was reported by many journalist to decrease throughout the years. However for dacades, due to profitability over perceived risk many Banks refused to implement in Green funding.(<a class="textLink" href="https://carbonmarketwatch.org/2021/05/18/will-the-dirty-banks-ever-stop-financing-fossil-fuels/">Carbon Market Watch</a>,2021) This led to Environmental, Social and Governence (ESG) to be enforced, which forces Banks to invest less in Fossil Fuel, especially in the UK. My objective is to evaluate the performace of Top Banks especially those in the UK according to their Market Capital, number of customer in relation to their funding on Fossi Fuel Over time. </h2>
+
+<h4> The Issue </h4>
+<div class="chart" id="ChartA"></div>
+<div class="chart" id="ChartB"></div>
+<p>The Map above shoes the overall view of Green House Emission since 2015. I've searched for a geoson map then by using vega lite I am able to combine it with the information that I found on <a class="textLink" href="https://worldpopulationreview.com/country-rankings/greenhouse-gas-emissions-by-country">The World Population Review</a> website which has a CSV version availiable on the website. The second graph shows specificly UK's Greenhouse Gas emission in total, We can see a decreace in the emission which means  consumers, government, businesses and financials sectors might be playing a role in reducing the use of Fossil Fuels. </p>
+
+
+<h4> How are Banks Related? </h4>
+<div class="chart" id="ChartC"></div>
+<p>The Graph above shows the World's Top 10 Banks funding and investing in Oil and Gas (Fossil Fuel)  Companies with two of UK's Banks participating in the investing. HSBC bank and Barclays bank were actively investing and funding Fossil Fuel up until the year 2021 according to <a class="textLink" href="https://www.banktrack.org/download/barclays_and_hsbc_s_43_billion_fossil_fuel_problem">Bank Track</a> (2021).For this chart,  the datas needed was provided by <a class="textLink" href="https://www.bankingonclimatechaos.org">Banking On Climate Chaos</a>  in  their 2022 Fossil Fuel Report as ready to download cvs file.</p> 
+<div class="chart" id="ChartD"></div>
+<h4> Does ESG Plays a Role in this ? </h4>
+
+<div class="chart" id="ChartE"></div>
+<div class="chart" id="ChartF"></div>
+<div class="chart" id="ChartG"></div>
+<p>
+    
+</p>
+
+
+<h4> Challenges... and How I Overcome Them </h4>
+<p>The Most Challenging part I've Faced was the part where I collect and choose Data as there are many ways to tackle this questions. Moreover on the technical part, most of the data I've collected requires merging and that the names of the banks would be slightly different. Hence In order to succesfully merge my required data I tabulate and filtered the names of the Bank in my CVS file. Moreover, as most data can be repetited, I need to find new ways and new findings inorder to deliver my topic well. Therefore, I found consumer index such as the satisfaction rate, changing of banks and regress them in vega night too analyse the coefficient and how it Banks' involovement in funding Fossil Fuel affect their attributes. Anther problem that I am currently trying out the solution is my disapearance of graphs. As my laptop currently is not in good condition, I continued using the code taught hoping that it could be seen in other devices.    </p>
+<h4> Conclusion </h4>
+
+<p>To Conclude, banks do play a role in the increase of CO2 emission in an indirect way by financing the Fussil Fuel Companies. However, due to the implementation of ESG, we can definatly see a huge improvement in the banking sector with most banks' goal of being Fossil Fuel free. Moreover, consumers and government policies contributes to the improvement of the use of Fossil Fuel as well. All this said, we also should not let our gaurd down as Greenwashing is another popular topic we would be able to discuss soon.   </p>
+
+
+</body>
+<script>
+    //Define charts:
+   
+
+    var myChartA = "MAP GHG.json";
+
+
+    var myChartB = "UK emission visual.json";
+
+
+    var myChartC = "pro2.json";
+
+
+    var myChartD = "bankfinancevperformance.json";
+
+
+    var myChartE = "visualization.vl-3.json";
+
+
+    var myChartF = "Week 9 copy.json";
+
+    var myChartG = "Bank Evaluation.json";
+
+
+
+    // Embed charts:
+
+    vegaEmbed('#ChartA', myChartA);
+
+    vegaEmbed('#ChartB', myChartB);
+
+
+    vegaEmbed('#ChartC', myChartC);
+
+    vegaEmbed('#ChartD', myChartD);
+
+    vegaEmbed('#ChartE', myChartE);
+
+    vegaEmbed('#ChartF', myChartF);
+
+    vegaEmbed('#ChartG', myChartG);
+
+
+    
+
+    
+    
+
+</script>
+
+
+</html>
